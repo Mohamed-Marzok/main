@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academix</title>
+    <link rel="icon" href="sohrtlogo.png">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- start nav -->
+    <div class="nav">
+      <div class="container nav-container">
+        <img src="logo.png" alt="logo" class="nav-logo" />
+        <div class="nav-links">
+          <i class="fa-solid fa-bars nav-links-bar"></i>
+          <ul class="nav-links-opation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About Us</a></li>
+        </div>
+      </div>
+    </div>
+    <!-- end nav -->
+    <!-- start landing -->
+ <div class="landing-section">
+    <div class="container landing-container">
+        <div class="landing-content">
+            <h1 class="landing-heading"><span class="text-highlight">Studying</span> Online is now much easier</h1>
+            <p class="landing-description">Acadmix is an interesting platform that will teach you in a more interactive way.</p>
+            <div class="landing-buttons">
+                <button class="login-button" >Log In</button>
+                <button class="signup-button">Sign Up</button>
+            </div>
+        </div>
+        <img src="sohrtlogo.png" alt="" class="landing-image">
+    </div>
+</div>
+<!-- start login popup -->
+<div class="login-popup">
+    <form action="" class="login-popup-form">
+        <div class="login-form-header">
+            <h2 class="login-form-welcome">Welcome Back</h2>
+            <p class="login-form-description">
+                Enter your credentials to access your account
+            </p>
+        </div>
+        <div class="login-form-boxes">
+            <div class="login-form-input-group">
+              <i class="fa-solid fa-user login-form-icon"></i>
+                <input type="email" class="login-form-input" name="username" placeholder="Enter your email" required/>
+            </div>
+            <div class="login-form-input-group">
+                  <i class="fa-solid fa-lock login-form-icon"></i>
+                <input type="password" class="login-form-input" name="password" placeholder="Enter your password" required/>
+            </div>
+        </div>
+        <button class="login-form-button">Log In</button>
+        <a href="#" class="login-forget-password-link">Forget Password?</a>
+    </form>
+    <div class="overlay"></div>
+</div>
+
+<!-- end login popup -->
+<!-- start signup popup -->
+<div class="signup-popup">
+    <form class="signup-popup-form">
+        <h1 class="signup-form-header">Sign Up</h1>
+        <div class="signup-fullname-inputs">
+            <input type="text" placeholder="First Name" class="signup-firstname-input" name="firstname"  required/>
+            <input type="text" placeholder="Last Name" class="signup-lastname-input" name="lastname" required/>
+        </div>
+        <input type="text" placeholder="User Name" class="signup-username-input" name="username" required/>
+        <input type="email" name="email" placeholder="Email" class="signup-email-input" required/>
+        <input type="password" name="password" class="signup-password-input" placeholder="Password" required/>
+        <input type="password" name="confirmpassword" class="signup-confirmpassword-input" placeholder="Confirm Password" required/>
+        <select name="user-type" class="signup-user-type-select" required >
+            <option value="admin">Instructor</option>
+            <option value="assistant">Assistant</option>
+            <option value="student">Student</option>
+        </select>
+        <input type="submit" class="signup-submit-button" />
+    </form>
+    <div class="overlay"></div>
+  </div>
+<!-- end signup popup -->
+<!-- end landing -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
